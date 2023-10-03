@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.square {
+    width: 250px;
+    height: 250px;
+    background-color: #008481;
+    animation: rotateAndChangeColor 5s linear infinite;
+}
+.square1 {
+    width: 250px;
+    height: 250px;
+    background-color: #db7434;
+    animation: rotateAndChangeColor 5s linear infinite;
+    text-align: center; 
+    align-items: center;
+    display: flex; 
+    justify-content: center;
+    font-size: 2rem;
+    color: black;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+
+
+
+@keyframes rotateAndChangeColor {
+    0% {
+        transform: rotate(0deg);
+        background-color: #dbac34;
+    }
+    25% {
+        transform: rotate(90deg);
+        background-color: #753ce7;
+    }
+    50% {
+        transform: rotate(180deg);
+        background-color: #2ecc71;
+    }
+    75% {
+        transform: rotate(270deg);
+        background-color: #f10f84;
+    }
+    100% {
+        transform: rotate(360deg);
+        background-color: #80b5d8;
+    }
+}
